@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacon Mushroom Spinach Frittata
+    </title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Adjust path if necessary -->
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="recipe_index.css" />
+    <link href="https://fonts.cdnfonts.com/css/red-hat-text-2" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.cdnfonts.com/css/garet");
+        @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
+        
+        body {
+            background-color: #ffffff;
+            color: #223046;
+            font-family: 'Red Hat Text', sans-serif;
+            font-size: small;
+            margin: 2% 5%;
+        }
+
+        .logo {
+            background-color: #faf7ed;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-left: 40px;
+            height: 70px;
+        }
+
+        nav {
+            background-color: #faf7ed;
+            width: 100%;
+            overflow: auto;
+            height: 70px;
+        }
+
+        nav a {
+            display: block;
+            padding: 20px 15px;
+            color: #223046;
+            font-size: larger;
+            text-decoration: none;
+            font-family: 'Garet', sans-serif;
+            text-align: center;
+            font-weight: bold;
+            float: right;
+            margin-left: 90px;
+            margin-right: 50px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .recipe {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .recipe-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .ingredients, .instructions {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .instructions h2 {
+            font-family: 'Garet', sans-serif;
+        }
+
+        .nutritional-info {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .nutritional-info h2 {
+            text-align: center;
+            color: #223046;
+            font-family: 'Garet', sans-serif;
+        }
+
+        .nutrition-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .label {
+            flex: 1;
+            font-weight: bold;
+            color: #223046;
+        }
+
+        .progress {
+            flex: 2;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 20px;
+            margin: 0 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .calories {
+            background-color: #ff5733; /* Red for calories */
+        }
+
+        .protein {
+            background-color: #ffcc00; /* Yellow for protein */
+        }
+
+        .fat {
+            background-color: #ffcccb; /* Light red for fat */
+        }
+
+        .carbs {
+            background-color: #33ccff; /* Blue for carbohydrates */
+        }
+
+        .value {
+            flex: 1;
+            text-align: right;
+            font-weight: bold;
+            color: #223046;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .star {
+            font-size: 30px;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .star:hover, .star.selected {
+            color: #ffcc00; /* Gold color for selected stars */
+        }
+
+        .highlight:hover {
+            background-color: #f0f0f0; /* Light grey background on hover */
+        }
+
+        footer {
+            background-color: #faf7ed;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 40px;    
+        }
+
+        footer a {
+            color: #953D33;
+            text-decoration: none;
+            border-radius: 50%;
+            background-color: #faf7ed;
+            display: inline-block;
+            padding: 30px;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Top Navigation Bar-->
+    <div class="logo"><img src="img/logo.png" alt="webpage logo" /></div>
+    <nav>
+      <ul>
+        <li><a href="">Contact</a></li>
+        <li><a class="active" href="./recipe.html">Recipes</a></li>
+        <li><a href="./homepage.html">Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Bacon Mushroom Spinach Frittata
+            </h1>
+        </header>
+        <div class="recipe">
+            <img src="../img/breakfast/b1.png" alt="Frozen Peach Bellini" class="recipe-image">
+
+            <div class="rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>5 large eggs
+                        <input type="checkbox"></li>
+                    <li>½ cup milk
+                        <input type="checkbox"></li>
+                    <li>½ teaspoon dried basil
+                        <input type="checkbox"></li>
+                    <li>½ teaspoon dried oregano
+                        <input type="checkbox"></li>
+                    <li>½ teaspoon dried thyme
+                        <input type="checkbox"></li>
+                    <li>Dash of hot sauce
+                        <input type="checkbox"></li>
+                    <li>Kosher salt and freshly ground black pepper, to taste
+                        <input type="checkbox"></li>
+                    <li>4 slices bacon, diced
+                        <input type="checkbox"></li>
+                    <li>2 cloves garlic, diced
+                        <input type="checkbox"></li>
+                    <li>8 ounces cremini mushrooms, thinly sliced
+                        <input type="checkbox"></li>
+                    <li>2 cups baby spinach
+                        <input type="checkbox"></li>
+                    <li>1 Roma tomato, diced
+                        <input type="checkbox"></li>
+
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li class="highlight">Preheat oven to 425 degrees F.
+                    </li>
+                    <li class="highlight">In a large bowl, whisk together eggs, milk, basil, oregano, thyme and hot sauce; season with salt and pepper, to taste. Set aside.
+                    </li>
+                    <li class="highlight">Heat a large oven-proof skillet over medium high heat. Add bacon and cook until brown and crispy, about 6-8 minutes, reserving 1 tablespoon excess fat. Transfer to a paper towel-lined plate.
+                    </li>
+                    <li class="highlight">Add garlic and mushrooms to the skillet, and cook, stirring occasionally, until tender and browned, about 3-4 minutes; season with salt and pepper, to taste.
+                    </li>
+                    <li class="highlight">Stir in spinach and tomato until the spinach begins to wilt, about 2-3 minutes. Stir in egg mixture and bacon, reserving 2 tablespoons, until well combined. Cook, undisturbed, until edges are set, about 2 minutes. Top with remaining bacon.
+                    </li>
+                    <li class="highlight">Place into oven and bake until top is set and golden brown, about 14-15 minutes.
+                    </li>
+                    <li class="highlight">Serve immediately.
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+
+        <!-- Nutritional Information -->
+<div class="nutritional-info">
+    <h2>Nutritional Information</h2>
+    <div class="nutrition-item">
+        <span class="label">Calories:</span>
+        <div class="progress">
+            <div class="progress-bar calories" style="width: 70%;"></div>
+        </div>
+        <span class="value">300 kcal</span>
+    </div>
+    <div class="nutrition-item">
+        <span class="label">Protein:</span>
+        <div class="progress">
+            <div class="progress-bar protein" style="width: 50%;"></div> <!-- Adjusted to match -->
+        </div>
+        <span class="value">15 g</span>
+    </div>
+    <div class="nutrition-item">
+        <span class="label">Fat:</span>
+        <div class="progress">
+            <div class="progress-bar fat" style="width: 30%;"></div> <!-- Adjusted to match -->
+        </div>
+        <span class="value">10 g</span> <!-- Adjust the value as necessary -->
+    </div>
+</div>
+
