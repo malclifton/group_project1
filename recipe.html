@@ -37,86 +37,185 @@
     <h1>Recipes</h1>
     <!--Categories-->
     <div class="index-category">
-      <a href="#" class="index-category-box">
+      <a
+        href="#"
+        class="index-category-box category"
+        onclick="showCatergory('breakfast')"
+      >
         <h3>Breakfast</h3>
       </a>
-      <a href="#" class="index-category-box">
+      <a
+        href="#"
+        class="index-category-box category"
+        onclick="showCatergory('lunch')"
+      >
         <h3>Lunch</h3>
       </a>
-      <a href="#" class="index-category-box">
+      <a
+        href="#"
+        class="index-category-box category"
+        onclick="showCatergory('dinner')"
+      >
         <h3>Dinner</h3>
       </a>
-      <a href="#" class="index-category-box">
+      <a
+        href="#"
+        class="index-category-box category"
+        onclick="showCatergory('dessert')"
+      >
         <h3>Dessert</h3>
       </a>
-      <a href="#" class="index-category-box">
+      <a
+        href="#"
+        class="index-category-box category"
+        onclick="showCatergory('drinks')"
+      >
         <h3>Drinks</h3>
       </a>
     </div>
+    <!--MAke only certain categories display-->
+    <script>
+      function showCatergory(category) {
+        const recipes = document.querySelectorAll(".recipe");
+        recipes.forEach((recipe) => {
+          if (recipe.classList.contains(category)) {
+            recipe.style.display = "block";
+          } else {
+            recipe.style.display = "none";
+          }
+        });
+      }
+    </script>
     <br />
     <br />
     <!--Recipe Images-->
+    <!--Needs to be Updated to go to individual recipe page-->
     <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/bulgogi.png">
-          <img src="img/bulgogi.png" alt="featured recipe" />
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b1.png">
+          <img src="img/breakfast/b1.png" alt="featured recipe" />
         </a>
         <div class="description">
-          <h5>Korean Beef Bulgogi<br />3 Hours</h5>
-          <p></p>
+          <h5>Strawberry & Cream Waffles</h5>
         </div>
       </div>
     </div>
     <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/bulgogi.png">
-          <img src="img/bulgogi.png" alt="featured recipe" />
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b2.png">
+          <img src="img/breakfast/b2.png" alt="featured recipe" />
         </a>
         <div class="description">
-          <h5>Korean Beef Bulgogi<br />3 Hours</h5>
-          <p></p>
+          <h5>Bacon & Egg Toast Cups</h5>
         </div>
       </div>
     </div>
     <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/bulgogi.png">
-          <img src="img/bulgogi.png" alt="featured recipe" />
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b3.png">
+          <img src="img/breakfast/b3.png" alt="featured recipe" />
         </a>
         <div class="description">
-          <h5>Korean Beef Bulgogi<br />3 Hours</h5>
-          <p></p>
+          <h5>Breakfast Tacos</h5>
         </div>
       </div>
     </div>
     <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/bulgogi.png">
-          <img src="img/bulgogi.png" alt="featured recipe" />
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b4.png">
+          <img src="img/breakfast/b4.png" alt="featured recipe" />
         </a>
         <div class="description">
-          <h5>Korean Beef Bulgogi<br />3 Hours</h5>
-          <p></p>
+          <h5>Ham, Egg, & Cheese Pockets</h5>
         </div>
       </div>
     </div>
     <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/bulgogi.png">
-          <img src="img/bulgogi.png" alt="featured recipe" />
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b5.png">
+          <img src="img/breakfast/b5.png" alt="featured recipe" />
         </a>
         <div class="description">
-          <h5>Korean Beef Bulgogi<br />3 Hours</h5>
-          <p></p>
+          <h5>Bacon Mushroom Spinach Frittata</h5>
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b6.png">
+          <img src="img/breakfast/b6.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Churro French Toast</h5>
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b7.png">
+          <img src="img/breakfast/b7.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Eggs Benedict</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b8.png">
+          <img src="img/breakfast/b8.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Steak & Eggs</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b9.png">
+          <img src="img/breakfast/b9.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Raspberry Croissant French Toast Bake</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b10.png">
+          <img src="img/breakfast/b10.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Spinach & Cheese Strata</h5>
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b11.png">
+          <img src="img/breakfast/b11.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Guacamole Breakfast Sandwich</h5>
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery recipe breakfast">
+        <a target="_blank" href="img/breakfast/b12.png">
+          <img src="img/breakfast/b12.png" alt="featured recipe" />
+        </a>
+        <div class="description">
+          <h5>Ham & Cheese Scones</h5>
         </div>
       </div>
     </div>
     <div class="clearfix"></div>
     <!--Button for Next Page-->
-    <div class="button-area">
-      <p>Page 1</p>
-      <button>Next Page</button>
-    </div>
+
     <footer>
       <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
       <a href="https://www.facebook.com/" class="fa fa-facebook"></a>

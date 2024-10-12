@@ -123,11 +123,6 @@ div.description {
   clear: both;
 }
 
-.button-area{
-display: inline-block;
-color: #223046;
-}
-
 footer{
     background-color: #faf7ed;
     width: 100%;
@@ -146,4 +141,23 @@ footer a{
     height: 80px;
     line-height: 80px;
     text-align: center;
+}
+
+.recipe{
+    display: none;
+}
+.recipe.breakfast{
+    display: block;
+}
+.recipe.lunch{
+    display: block;
+}
+.recipe.dinner{
+    display: block;
+}
+.recipe.dessert{
+    display: block;
+}
+.recipe.drinks{
+    display: block;
 }
