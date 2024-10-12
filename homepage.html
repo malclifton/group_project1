@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>PlatePlease</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+
     <link rel="stylesheet" href="index.css" />
     <link
       href="https://fonts.cdnfonts.com/css/red-hat-text-2"
       rel="stylesheet"
     />
     <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       @import url("https://fonts.cdnfonts.com/css/garet");
       @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
@@ -18,67 +25,121 @@
     <div class="logo"><img src="img/logo.png" alt="webpage logo" /></div>
     <nav>
       <ul>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#recipe">Recipes</a></li>
-        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li>
+          <!--href="https://codd.cs.gsu.edu/~mclifton6/webpro/project1/recipe.html"-->
+          <a href="./recipe.html">Recipes</a>
+        </li>
+        <li><a class="active" href="">Home</a></li>
       </ul>
     </nav>
     <h1>Featured Recipes</h1>
     <!--Image Carousel-->
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/bulgogi.png">
-          <img src="img/bulgogi.png" alt="featured recipe" />
-        </a>
-        <div class="description">
-          <h5>Korean Beef Bulgogi<br />3 Hours</h5>
-          <p></p>
+    <div class="carousel">
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img/bulgogi.png">
+            <img src="img/bulgogi.png" alt="featured recipe" />
+          </a>
+          <div class="description">
+            <h5>Korean Beef Bulgogi<br />3 Hours</h5>
+            <p></p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/chickenTacos.png">
-          <img src="img/chickenTacos.png" alt="featured recipe" />
-        </a>
-        <div class="description">
-          <h5>Chicken Tacos<br />30 Minutes</h5>
-          <p></p>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img/chickenTacos.png">
+            <img src="img/chickenTacos.png" alt="featured recipe" />
+          </a>
+          <div class="description">
+            <h5>Chicken Tacos<br />30 Minutes</h5>
+            <p></p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/chicken&Waffles.png">
-          <img src="img/chicken&Waffles.png" alt="featured recipe" />
-        </a>
-        <div class="description">
-          <h5>Honey Fried Chicken & Waffles<br />45 Minutes</h5>
-          <p></p>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img/chicken&Waffles.png">
+            <img src="img/chicken&Waffles.png" alt="featured recipe" />
+          </a>
+          <div class="description">
+            <h5>Honey Fried Chicken & Waffles<br />45 Minutes</h5>
+            <p></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="img/sausageGnocchi.png">
-          <img src="img/sausageGnocchi.png" alt="featured recipe" />
-        </a>
-        <div class="description">
-          <h5>Creamy Sausage Gnocchi<br />30 Minutes</h5>
-          <p></p>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="img/sausageGnocchi.png">
+            <img src="img/sausageGnocchi.png" alt="featured recipe" />
+          </a>
+          <div class="description">
+            <h5>Creamy Sausage Gnocchi<br />30 Minutes</h5>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
     <div class="clearfix"></div>
     <h1>Categories</h1>
     <!--Category Icons-->
+    <div class="index-category">
+      <a href="#" class="index-category-box">
+        <h3>Breakfast</h3>
+      </a>
+      <a href="#" class="index-category-box">
+        <h3>Lunch</h3>
+      </a>
+      <a href="#" class="index-category-box">
+        <h3>Dinner</h3>
+      </a>
+      <a href="#" class="index-category-box">
+        <h3>Dessert</h3>
+      </a>
+      <a href="#" class="index-category-box">
+        <h3>Drinks</h3>
+      </a>
+    </div>
     <!--Desription(at least 3 Lines)-->
+    <p id="c_p">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat.
+    </p>
     <h1>About</h1>
-
+    <p id="c_p">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <br /><br />
     <footer>
       <!--Social Media Icons-->
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://x.com/?lang=en" class="fa fa-twitter"></a>
+      <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
     </footer>
   </body>
 </html>
