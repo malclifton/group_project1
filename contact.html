@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.jpg" alt="Logo" />
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#" class="contact-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="contactstyle.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/red-hat-text-2"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/garet");
+      @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
+    </style>
+  </head>
+  <body>
+    <!--Top Navigation Bar-->
+    <div class="logo"><img src="img/logo.png" alt="webpage logo" /></div>
+    <nav>
+      <ul>
+        <li><a class="active" href="">Contact</a></li>
+        <li>
+          <a href="./recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="./homepage.html">Home</a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
-        <section class="contact-section">
-            <h1>Contact Us</h1>
-            <form action="#" class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                </div>
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+      <section class="contact-section">
+        <h1>Contact Us</h1>
+        <form action="#" class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
-
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
-        <div class="social-icons">
-            <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
-            <a href="#"><img src="youtube.jpg" alt="YouTube"></a>
-            <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
-            <a href="#"><img src="tiktok.jpg" alt="TikTok"></a>
-        </div>
+      <!--Social Media Icons-->
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://x.com/?lang=en" class="fa fa-twitter"></a>
+      <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
     </footer>
-</body>
+  </body>
 </html>
