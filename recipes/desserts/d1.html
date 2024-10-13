@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruity Pebble Cupcakes
+
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- Adjust path if necessary -->
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png" />
+    <link
+      href="https://fonts.cdnfonts.com/css/red-hat-text-2"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/garet");
+      @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
+
+      body {
+        background-color: #ffffff;
+        color: #223046;
+        font-family: "Red Hat Text", sans-serif;
+        font-size: small;
+        margin: 2% 5%;
+      }
+
+      .logo {
+        background-color: #faf7ed;
+      }
+
+      .logo img {
+        position: absolute;
+        margin-left: 40px;
+        height: 70px;
+      }
+
+      nav {
+        background-color: #faf7ed;
+        width: 100%;
+        overflow: auto;
+        height: 70px;
+      }
+
+      nav a {
+        display: block;
+        padding: 20px 15px;
+        color: #223046;
+        font-size: larger;
+        text-decoration: none;
+        font-family: "Garet", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        float: right;
+        margin-left: 90px;
+        margin-right: 50px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0 0 0 150px;
+        padding: 0;
+        background-color: #faf7ed;
+      }
+      nav li {
+        border-left: 1px solid #faf7ed;
+        background-color: #faf7ed;
+      }
+      nav li:first-child {
+        border-left: none;
+      }
+      .active {
+        color: #953d33;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+
+      .recipe {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .recipe-image {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .ingredients,
+      .instructions {
+        margin-top: 20px;
+      }
+
+      .ingredients h2,
+      .instructions h2 {
+        font-family: "Garet", sans-serif;
+      }
+
+      .nutritional-info {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .nutritional-info h2 {
+        text-align: center;
+        color: #223046;
+        font-family: "Garet", sans-serif;
+      }
+
+      .nutrition-item {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .label {
+        flex: 1;
+        font-weight: bold;
+        color: #223046;
+      }
+
+      .progress {
+        flex: 2;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 20px;
+        margin: 0 10px;
+      }
+
+      .progress-bar {
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      .calories {
+        background-color: #ff5733;
+      }
+
+      .protein {
+        background-color: #ffcc00;
+      }
+
+      .fat {
+        background-color: #ffcccb;
+      }
+
+      .carbs {
+        background-color: #33ccff;
+      }
+
+      .value {
+        flex: 1;
+        text-align: right;
+        font-weight: bold;
+        color: #223046;
+      }
+
+      .rating {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .star {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+      }
+
+      .star:hover,
+      .star.selected {
+        color: #ffcc00; /* Gold color for selected stars */
+      }
+
+      .highlight:hover {
+        background-color: #f0f0f0; /* Light grey background on hover */
+      }
+
+      footer {
+        background-color: #faf7ed;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      footer a {
+        color: #953d33;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #faf7ed;
+        display: inline-block;
+        padding: 30px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Top Navigation Bar-->
+    <div class="logo"><img src="../../img/logo.png" alt="webpage logo" /></div>
+    <nav>
+      <ul>
+        <li><a href="">Contact</a></li>
+        <li>
+          <a class="active" href="../../recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="./homepage.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>Fruity Pebble Cupcakes
+
+        </h1>
+      </header>
+      <div class="recipe">
+        <img
+          src="../../img/dessert/d1.png"
+          alt="Creamy Chicken Marsala"
+          class="recipe-image"
+        />
+        <!--Change the path image src to match-->
+
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>3 cups cake flour
+                <input type="checkbox" /></li>
+            <!--Copy and paste ingredients-->
+            <li>1 tablespoon baking powder
+                <input type="checkbox" /></li>
+            <li>
+                ¼ teaspoon kosher salt
+
+              <input type="checkbox" />
+            </li>
+            <li>1 cup milk
+                <input type="checkbox" /></li>
+            <li>4 egg whites
+                <input type="checkbox" /></li>
+            <li>2 teaspoons vanilla extract
+                <input type="checkbox" /></li>
+            <li>¾ cup unsalted butter, at room temperature
+                <input type="checkbox" /></li>
+            <li>1 cup sugar
+                <input type="checkbox" /></li>
+            <li>½ cup rainbow jimmies
+                <input type="checkbox" /></li>
+            <li>1 ½ cups unsalted butter, at room temperature<input type="checkbox" /></li>
+            <li>3 ½ cups confectioners’ sugar
+                <input type="checkbox" /></li>
+            <li>2 tablespoons heavy cream
+                <input type="checkbox" /></li>
+            <li>1 tablespoon vanilla extract
+                <input type="checkbox" /></li>
+          </ul>
+        </div>
+
+        <div class="instructions">
+          <!--Copy and Paste Instructions-->
+          <h2>Instructions</h2>
+          <ol>
+            <li class="highlight">
+              In a large bowl, combine strawberries, 1 tablespoon sugar, and
+              orange juice. Let stand, stirring occasionally, until sugar has
+              dissolved, about 10 minutes; set aside.
+            </li>
+            <li class="highlight">In a large bowl, combine flour, baking powder and salt. campaignIcon Coupons
+            </li>
+            <li class="highlight">
+                In a medium bowl, whisk together milk, egg whites and vanilla.
+
+            </li>
+            <li class="highlight">
+                In the bowl of an electric mixer fitted with paddle attachment, beat butter and sugar on medium speed until light and fluffy, about 2-3 minutes. With mixer on low speed, add dry ingredients and milk mixture alternately in 3 parts, beginning and ending with dry ingredients, beating just until incorporated. Add rainbow jimmies and stir using a rubber spatula just until moist.
+
+            </li>
+            <li class="highlight">Scoop the batter evenly into the muffin tray. Place into oven and bake for 15-18 minutes, or until a tester inserted in center comes out clean. Remove from oven and cool completely on a wire rack before frosting.</li>
+            <li class="highlight">In the bowl of an electric mixer fitted with the paddle attachment, beat butter and confectioners’ sugar on medium speed until light and fluffy, approximately 1-2 minutes. With the mixer on low speed, gradually add heavy cream and vanilla, beating just until incorporated. Increase speed to medium high and beat until frosting is light and fluffy, approximately 1-2 minutes.
+            </li>
+            <li class="highlight">Use a small offset spatula or a pastry bag fitted with a decorative tip to frost cupcakes, garnished with Fruity Pebbles, if desired.
+            </li>
+
+          </ol>
+        </div>
+      </div>
+
+      <!-- Nutritional Information -->
+      <div class="nutritional-info">
+        <h2>Nutritional Information</h2>
+        <div class="nutrition-item">
+          <span class="label">Calories:</span>
+          <div class="progress">
+            <div class="progress-bar calories" style="width: 70%"></div>
+          </div>
+          <span class="value">300 kcal</span>
+        </div>
+        <div class="nutrition-item">
+          <span class="label">Protein:</span>
+          <div class="progress">
+            <div class="progress-bar protein" style="width: 50%"></div>
+            <!-- Adjusted to match -->
+          </div>
+          <span class="value">15 g</span>
+        </div>
+        <div class="nutrition-item">
+          <span class="label">Fat:</span>
+          <div class="progress">
+            <div class="progress-bar fat" style="width: 30%"></div>
+            <!-- Adjusted to match -->
+          </div>
+          <span class="value">10 g</span>
+          <!-- Adjust the value as necessary -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
