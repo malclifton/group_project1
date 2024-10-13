@@ -1,185 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spinach & Cheese Strata
-    </title>
-    <link rel="stylesheet" href="../styles.css"> <!-- Adjust path if necessary -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinach & Cheese Strata</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- Adjust path if necessary -->
     <link rel="icon" type="image/x-icon" href="img/logo.png" />
     <link rel="stylesheet" href="recipe_index.css" />
-    <link href="https://fonts.cdnfonts.com/css/red-hat-text-2" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/red-hat-text-2"
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet" />
     <style>
-        @import url("https://fonts.cdnfonts.com/css/garet");
-        @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
-        
-        body {
-            background-color: #ffffff;
-            color: #223046;
-            font-family: 'Red Hat Text', sans-serif;
-            font-size: small;
-            margin: 2% 5%;
-        }
+      @import url("https://fonts.cdnfonts.com/css/garet");
+      @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
 
-        .logo {
-            background-color: #faf7ed;
-        }
+      body {
+        background-color: #ffffff;
+        color: #223046;
+        font-family: "Red Hat Text", sans-serif;
+        font-size: small;
+        margin: 2% 5%;
+      }
 
-        .logo img {
-            position: absolute;
-            margin-left: 40px;
-            height: 70px;
-        }
+      .logo {
+        background-color: #faf7ed;
+      }
 
-        nav {
-            background-color: #faf7ed;
-            width: 100%;
-            overflow: auto;
-            height: 70px;
-        }
+      .logo img {
+        position: absolute;
+        margin-left: 40px;
+        height: 70px;
+      }
 
-        nav a {
-            display: block;
-            padding: 20px 15px;
-            color: #223046;
-            font-size: larger;
-            text-decoration: none;
-            font-family: 'Garet', sans-serif;
-            text-align: center;
-            font-weight: bold;
-            float: right;
-            margin-left: 90px;
-            margin-right: 50px;
-        }
+      nav {
+        background-color: #faf7ed;
+        width: 100%;
+        overflow: auto;
+        height: 70px;
+      }
 
-        .container {
-            margin-top: 20px;
-        }
+      nav a {
+        display: block;
+        padding: 20px 15px;
+        color: #223046;
+        font-size: larger;
+        text-decoration: none;
+        font-family: "Garet", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        float: right;
+        margin-left: 90px;
+        margin-right: 50px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0 0 0 150px;
+        padding: 0;
+        background-color: #faf7ed;
+      }
+      nav li {
+        border-left: 1px solid #faf7ed;
+        background-color: #faf7ed;
+      }
+      li:first-child {
+        border-left: none;
+      }
+      .active {
+        color: #953d33;
+      }
 
-        .recipe {
-            display: block;
-            margin-top: 20px;
-        }
+      .container {
+        margin-top: 20px;
+      }
 
-        .recipe-image {
-            width: 100%;
-            border-radius: 10px;
-        }
+      .recipe {
+        display: block;
+        margin-top: 20px;
+      }
 
-        .ingredients, .instructions {
-            margin-top: 20px;
-        }
+      .recipe-image {
+        width: 100%;
+        border-radius: 10px;
+      }
 
-        .ingredients h2, .instructions h2 {
-            font-family: 'Garet', sans-serif;
-        }
+      .ingredients,
+      .instructions {
+        margin-top: 20px;
+      }
 
-        .nutritional-info {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
+      .ingredients h2,
+      .instructions h2 {
+        font-family: "Garet", sans-serif;
+      }
 
-        .nutritional-info h2 {
-            text-align: center;
-            color: #223046;
-            font-family: 'Garet', sans-serif;
-        }
+      .nutritional-info {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
 
-        .nutrition-item {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-        }
+      .nutritional-info h2 {
+        text-align: center;
+        color: #223046;
+        font-family: "Garet", sans-serif;
+      }
 
-        .label {
-            flex: 1;
-            font-weight: bold;
-            color: #223046;
-        }
+      .nutrition-item {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
 
-        .progress {
-            flex: 2;
-            background-color: #e0e0e0;
-            border-radius: 5px;
-            overflow: hidden;
-            height: 20px;
-            margin: 0 10px;
-        }
+      .label {
+        flex: 1;
+        font-weight: bold;
+        color: #223046;
+      }
 
-        .progress-bar {
-            height: 100%;
-            border-radius: 5px;
-        }
+      .progress {
+        flex: 2;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 20px;
+        margin: 0 10px;
+      }
 
-        .calories {
-            background-color: #ff5733; /* Red for calories */
-        }
+      .progress-bar {
+        height: 100%;
+        border-radius: 5px;
+      }
 
-        .protein {
-            background-color: #ffcc00; /* Yellow for protein */
-        }
+      .calories {
+        background-color: #ff5733;
+      }
 
-        .fat {
-            background-color: #ffcccb; /* Light red for fat */
-        }
+      .protein {
+        background-color: #ffcc00;
+      }
 
-        .carbs {
-            background-color: #33ccff; /* Blue for carbohydrates */
-        }
+      .fat {
+        background-color: #ffcccb;
+      }
 
-        .value {
-            flex: 1;
-            text-align: right;
-            font-weight: bold;
-            color: #223046;
-        }
+      .carbs {
+        background-color: #33ccff;
+      }
 
-        .rating {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
+      .value {
+        flex: 1;
+        text-align: right;
+        font-weight: bold;
+        color: #223046;
+      }
 
-        .star {
-            font-size: 30px;
-            color: #ccc;
-            cursor: pointer;
-        }
+      .rating {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
 
-        .star:hover, .star.selected {
-            color: #ffcc00; /* Gold color for selected stars */
-        }
+      .star {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+      }
 
-        .highlight:hover {
-            background-color: #f0f0f0; /* Light grey background on hover */
-        }
+      .star:hover,
+      .star.selected {
+        color: #ffcc00; /* Gold color for selected stars */
+      }
 
-        footer {
-            background-color: #faf7ed;
-            width: 100%;
-            height: 100px;
-            text-align: center;
-            font-size: 40px;    
-        }
+      .highlight:hover {
+        background-color: #f0f0f0; /* Light grey background on hover */
+      }
 
-        footer a {
-            color: #953D33;
-            text-decoration: none;
-            border-radius: 50%;
-            background-color: #faf7ed;
-            display: inline-block;
-            padding: 30px;
-            width: 80px;
-            height: 80px;
-            line-height: 80px;
-            text-align: center;
-        }
+      footer {
+        background-color: #faf7ed;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      footer a {
+        color: #953d33;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #faf7ed;
+        display: inline-block;
+        padding: 30px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!--Top Navigation Bar-->
     <div class="logo"><img src="img/logo.png" alt="webpage logo" /></div>
     <nav>
@@ -191,99 +213,122 @@
     </nav>
 
     <div class="container">
-        <header>
-            <h1>Spinach & Cheese Strata
-            </h1>
-        </header>
-        <div class="recipe">
-            <img src="../../img/breakfast/b10.png" alt="Frozen Peach Bellini" class="recipe-image">
+      <header>
+        <h1>Spinach & Cheese Strata</h1>
+      </header>
+      <div class="recipe">
+        <img
+          src="../../img/breakfast/b10.png"
+          alt="Frozen Peach Bellini"
+          class="recipe-image"
+        />
 
-            <div class="rating">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
-            </div>
-
-            <div class="ingredients">
-                <h2>Ingredients</h2>
-                <ul>
-                    <li>1 ¼ cups whole milk
-                        <input type="checkbox"></li>
-                    <li>5 large eggs
-                        <input type="checkbox"></li>
-                    <li>1 teaspoon Dijon mustard
-                        <input type="checkbox"></li>
-                    <li>¼ teaspoon ground nutmeg
-                        <input type="checkbox"></li>
-                    <li>Kosher salt and freshly ground black pepper, to taste
-                        <input type="checkbox"></li>
-                    <li>3 tablespoons unsalted butter
-                        <input type="checkbox"></li>
-                    <li>3 cloves garlic, minced
-                        <input type="checkbox"></li>
-                    <li>½ cup sliced green onions
-                        <input type="checkbox"></li>
-                    <li>1 12-ounce package frozen chopped spinach, thawed and squeezed dry
-                        <input type="checkbox"></li>
-                    <li>6 cups 1-inch cubed challah bread
-                        <input type="checkbox"></li>
-                    <li>¾ cup shredded Swiss cheese, divided<input type="checkbox"></li>
-                    <li>¾ cup shredded Gruyere cheese, divided
-                        <input type="checkbox"></li>
-                    <li>¼ cup freshly grated Parmesan cheese, divided
-                        <input type="checkbox"></li>
-
-                </ul>
-            </div>
-
-            <div class="instructions">
-                <h2>Instructions</h2>
-                <ol>
-                    <li class="highlight">In a large bowl, whisk together milk, eggs, Dijon and nutmeg; season with salt and pepper, to taste; set aside.
-                    </li>
-                    <li class="highlight">Melt butter in a 12-inch oven-proof skillet over medium-high heat. Stir garlic, green onions and spinach until heated through, about 3-5 minutes. Remove from heat.
-                    </li>
-                    <li class="highlight">Stir in bread cubes and gently toss to combine. Pour milk mixture evenly over the top. Stir in 1/2 cup Swiss, 1/2 cup Gruyere, and 2 tablespoons Parmesan.
-                    </li>
-                    <li class="highlight">Cover and place in the refrigerator for at least 8 hours or overnight.
-                    </li>
-                    <li class="highlight">Preheat oven to 375 degrees F. Remove strata from the refrigerator, let sit for 30 minutes.</li>
-                    <li class="highlight">Sprinkle with remaining 1/4 cup Swiss, 1/4 cup Gruyere and 2 tablespoons Parmesan.
-                    </li>
-                    <li class="highlight">Place into oven and bake for 25-30 minutes, or until puffed, golden brown and cooked through.
-                    </li>
-                    <li class="highlight">Serve immediately.
-                    </li>
-
-                </ol>
-            </div>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
         </div>
 
-        <!-- Nutritional Information -->
-<div class="nutritional-info">
-    <h2>Nutritional Information</h2>
-    <div class="nutrition-item">
-        <span class="label">Calories:</span>
-        <div class="progress">
-            <div class="progress-bar calories" style="width: 70%;"></div>
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>1 ¼ cups whole milk <input type="checkbox" /></li>
+            <li>5 large eggs <input type="checkbox" /></li>
+            <li>1 teaspoon Dijon mustard <input type="checkbox" /></li>
+            <li>¼ teaspoon ground nutmeg <input type="checkbox" /></li>
+            <li>
+              Kosher salt and freshly ground black pepper, to taste
+              <input type="checkbox" />
+            </li>
+            <li>3 tablespoons unsalted butter <input type="checkbox" /></li>
+            <li>3 cloves garlic, minced <input type="checkbox" /></li>
+            <li>½ cup sliced green onions <input type="checkbox" /></li>
+            <li>
+              1 12-ounce package frozen chopped spinach, thawed and squeezed dry
+              <input type="checkbox" />
+            </li>
+            <li>6 cups 1-inch cubed challah bread <input type="checkbox" /></li>
+            <li>
+              ¾ cup shredded Swiss cheese, divided<input type="checkbox" />
+            </li>
+            <li>
+              ¾ cup shredded Gruyere cheese, divided <input type="checkbox" />
+            </li>
+            <li>
+              ¼ cup freshly grated Parmesan cheese, divided
+              <input type="checkbox" />
+            </li>
+          </ul>
         </div>
-        <span class="value">300 kcal</span>
+
+        <div class="instructions">
+          <h2>Instructions</h2>
+          <ol>
+            <li class="highlight">
+              In a large bowl, whisk together milk, eggs, Dijon and nutmeg;
+              season with salt and pepper, to taste; set aside.
+            </li>
+            <li class="highlight">
+              Melt butter in a 12-inch oven-proof skillet over medium-high heat.
+              Stir garlic, green onions and spinach until heated through, about
+              3-5 minutes. Remove from heat.
+            </li>
+            <li class="highlight">
+              Stir in bread cubes and gently toss to combine. Pour milk mixture
+              evenly over the top. Stir in 1/2 cup Swiss, 1/2 cup Gruyere, and 2
+              tablespoons Parmesan.
+            </li>
+            <li class="highlight">
+              Cover and place in the refrigerator for at least 8 hours or
+              overnight.
+            </li>
+            <li class="highlight">
+              Preheat oven to 375 degrees F. Remove strata from the
+              refrigerator, let sit for 30 minutes.
+            </li>
+            <li class="highlight">
+              Sprinkle with remaining 1/4 cup Swiss, 1/4 cup Gruyere and 2
+              tablespoons Parmesan.
+            </li>
+            <li class="highlight">
+              Place into oven and bake for 25-30 minutes, or until puffed,
+              golden brown and cooked through.
+            </li>
+            <li class="highlight">Serve immediately.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Nutritional Information -->
+      <div class="nutritional-info">
+        <h2>Nutritional Information</h2>
+        <div class="nutrition-item">
+          <span class="label">Calories:</span>
+          <div class="progress">
+            <div class="progress-bar calories" style="width: 70%"></div>
+          </div>
+          <span class="value">300 kcal</span>
+        </div>
+        <div class="nutrition-item">
+          <span class="label">Protein:</span>
+          <div class="progress">
+            <div class="progress-bar protein" style="width: 50%"></div>
+            <!-- Adjusted to match -->
+          </div>
+          <span class="value">15 g</span>
+        </div>
+        <div class="nutrition-item">
+          <span class="label">Fat:</span>
+          <div class="progress">
+            <div class="progress-bar fat" style="width: 30%"></div>
+            <!-- Adjusted to match -->
+          </div>
+          <span class="value">10 g</span>
+          <!-- Adjust the value as necessary -->
+        </div>
+      </div>
     </div>
-    <div class="nutrition-item">
-        <span class="label">Protein:</span>
-        <div class="progress">
-            <div class="progress-bar protein" style="width: 50%;"></div> <!-- Adjusted to match -->
-        </div>
-        <span class="value">15 g</span>
-    </div>
-    <div class="nutrition-item">
-        <span class="label">Fat:</span>
-        <div class="progress">
-            <div class="progress-bar fat" style="width: 30%;"></div> <!-- Adjusted to match -->
-        </div>
-        <span class="value">10 g</span> <!-- Adjust the value as necessary -->
-    </div>
-</div>
-
+  </body>
+</html>
