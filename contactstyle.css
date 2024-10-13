@@ -11,6 +11,9 @@ body{
 hr{
     border: solid 2px #953D33;
 }
+nav a:hover{
+    color: #953D33;
+}
 .logo{
     background-color: #faf7ed;
 }

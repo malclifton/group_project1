@@ -106,6 +106,9 @@ div.description {
   font-weight: bold;
   font-size: larger;
 }
+nav a:hover{
+    color: #953D33;
+}
 
 * {
   box-sizing: border-box;

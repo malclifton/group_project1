@@ -50,7 +50,10 @@ li:first-child{
 }
 .active{
     color:#953D33;
+}nav a:hover{
+    color: #953D33;
 }
+
 
 h1{
     text-align: center;
