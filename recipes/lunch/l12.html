@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken & Avocado Ranch Burritos Recipe</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- Adjust path if necessary -->
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png" />
+    <link
+      href="https://fonts.cdnfonts.com/css/red-hat-text-2"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/garet");
+      @import url("https://fonts.cdnfonts.com/css/red-hat-text-2");
+
+      body {
+        background-color: #ffffff;
+        color: #223046;
+        font-family: "Red Hat Text", sans-serif;
+        font-size: small;
+        margin: 2% 5%;
+      }
+
+      .logo {
+        background-color: #faf7ed;
+      }
+
+      .logo img {
+        position: absolute;
+        margin-left: 40px;
+        height: 70px;
+      }
+
+      nav {
+        background-color: #faf7ed;
+        width: 100%;
+        overflow: auto;
+        height: 70px;
+      }
+
+      nav a {
+        display: block;
+        padding: 20px 15px;
+        color: #223046;
+        font-size: larger;
+        text-decoration: none;
+        font-family: "Garet", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        float: right;
+        margin-left: 90px;
+        margin-right: 50px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0 0 0 150px;
+        padding: 0;
+        background-color: #faf7ed;
+      }
+      nav li {
+        border-left: 1px solid #faf7ed;
+        background-color: #faf7ed;
+      }
+      nav li:first-child {
+        border-left: none;
+      }
+      .active {
+        color: #953d33;
+      }
+
+      .container {
+        margin-top: 20px;
+      }
+
+      .recipe {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .recipe-image {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .ingredients,
+      .instructions {
+        margin-top: 20px;
+      }
+
+      .ingredients h2,
+      .instructions h2 {
+        font-family: "Garet", sans-serif;
+      }
+
+      .nutritional-info {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .nutritional-info h2 {
+        text-align: center;
+        color: #223046;
+        font-family: "Garet", sans-serif;
+      }
+
+      .nutrition-item {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .label {
+        flex: 1;
+        font-weight: bold;
+        color: #223046;
+      }
+
+      .progress {
+        flex: 2;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 20px;
+        margin: 0 10px;
+      }
+
+      .progress-bar {
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      .calories {
+        background-color: #ff5733;
+      }
+
+      .protein {
+        background-color: #ffcc00;
+      }
+
+      .fat {
+        background-color: #ffcccb;
+      }
+
+      .carbs {
+        background-color: #33ccff;
+      }
+
+      .value {
+        flex: 1;
+        text-align: right;
+        font-weight: bold;
+        color: #223046;
+      }
+
+      .rating {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .star {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+      }
+
+      .star:hover,
+      .star.selected {
+        color: #ffcc00; /* Gold color for selected stars */
+      }
+
+      .highlight:hover {
+        background-color: #f0f0f0; /* Light grey background on hover */
+      }
+
+      footer {
+        background-color: #faf7ed;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      footer a {
+        color: #953d33;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #faf7ed;
+        display: inline-block;
+        padding: 30px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Top Navigation Bar-->
+    <div class="logo"><img src="../../img/logo.png" alt="webpage logo" /></div>
+    <nav>
+      <ul>
+        <li><a href="../../contact.html">Contact</a></li>
+        <li>
+          <a class="active" href="../../recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="../../homepage.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>Chicken & Avocado Ranch Burritos</h1>
+      </header>
+      <div class="recipe">
+        <img
+          src="../../img/lunch/l12.png"
+          alt="Chicken & Avocado Ranch Burritos"
+          class="recipe-image"
+        />
+        <!--Change the path image src to match-->
+
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>
+                1 pound boneless, skinless chicken thighs, cut into 1-inch chunks*<input
+                type="checkbox"
+              />
+            </li>
+            <!--Copy and paste ingredients-->
+            <li>1 (1.25-ounce) package taco seasoning<input type="checkbox" /></li>
+            <li>
+                1 tablespoon olive oil
+              <input type="checkbox" />
+            </li>
+            <li>4 burrito-size flour tortillas, 10 inches each<input type="checkbox" /></li>
+            <li>2 avocados, halved, peeled, seeded and diced<input type="checkbox" /></li>
+            <li>1 cup shredded mozzarella cheese<input type="checkbox" /></li>
+            <li>¼ cup sour cream<input type="checkbox" /></li>
+            <li>
+                ¼ cup Ranch dressing<input
+                type="checkbox"
+              />
+            </li>
+            <li>¼ cup chopped fresh cilantro leaves<input type="checkbox" /></li>
+          </ul>
+        </div>
+
+        <div class="instructions">
+          <!--Copy and Paste Instructions-->
+          <h2>Instructions</h2>
+          <ol>
+            <li class="highlight">
+                Heat olive oil in a cast iron grill pan over medium heat. Season chicken thighs with taco seasoning. Add chicken to the skillet and cook until golden, about 3-4 minutes; set aside.
+            </li>
+            <li class="highlight">
+                Heat tortillas according to package instructions.
+            </li>
+            <li class="highlight">
+                Working one at a time, place chicken, avocado, cheese, sour cream, Ranch and cilantro in the center of each tortilla. Bring the bottom edge of the tortilla tightly over the filling, folding in the sides. Continue rolling until the top of the tortilla is reached. Repeat with remaining tortillas.
+            </li>
+            <li class="highlight">
+                Heat a cast iron grill pan over medium-high heat. Add burritos and cook, pressing gently with a spatula, about 3-4 minutes per side, or until golden brown and the cheese has melted.*
+            </li>
+            <li class="highlight">
+                Serve immediately.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Nutritional Information -->
+      <div class="nutritional-info">
+        <h2>Nutritional Information</h2>
+        <div class="nutrition-item">
+          <span class="label">Calories:</span>
+          <div class="progress">
+            <div class="progress-bar calories" style="width: 70%"></div>
+          </div>
+          <span class="value">200 kcal</span>
+        </div>
+        <div class="nutrition-item">
+          <span class="label">Protein:</span>
+          <div class="progress">
+            <div class="progress-bar protein" style="width: 50%"></div>
+            <!-- Adjusted to match -->
+          </div>
+          <span class="value">20 g</span>
+        </div>
+        <div class="nutrition-item">
+          <span class="label">Fat:</span>
+          <div class="progress">
+            <div class="progress-bar fat" style="width: 30%"></div>
+            <!-- Adjusted to match -->
+          </div>
+          <span class="value">10 g</span>
+          <!-- Adjust the value as necessary -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
